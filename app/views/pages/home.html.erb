@@ -1,7 +1,18 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path('Gallinas.png') %>);">
-  <div class="container">
-    <h1>Clara <strong>Y</strong> <strong>Ema</strong>!</h1>
-    <p>Producción de huevos basada en el bienestar animal, con gallinas libres de jaula, priorizando su sanidad y alimentadas con materias primas de primera calidad, respetando los hábitos naturales de consumo, libertad de movimiento y comportamiento natural de la especie.</p>
-    <a class="btn btn-flat" href="#">Shop now</a>
+<%# <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path('banner2.png') );"> %>
+<div class="banner">
+  <div class="container banner-container">
+    <div class="row">
+
+      <div class="col-6">
+        <h1>Clara <strong>Y</strong> <strong>Ema</strong>!</h1>
+        <p>Producción de huevos basada en el bienestar animal, con gallinas libres de jaula, priorizando su sanidad y alimentadas con materias primas de primera calidad, respetando los hábitos naturales de consumo, libertad de movimiento y comportamiento natural de la especie.</p>
+        <a class="btn btn-flat" href="#">Shop now</a>
+      </div>
+
+      <div class="col-6">
+        <%= image_tag('banner-image') %>
+      </div>
+
+    </div>
   </div>
 </div>
