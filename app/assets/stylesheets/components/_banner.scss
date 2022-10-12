@@ -26,13 +26,135 @@
 }
 
 .banner img {
-  width: 100%;
-  margin-top: -55px;
+  // width: 100%;
+  // margin-top: -55px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .banner-container {
-  // width: 50vw;
-  // margin-right: 50vw;
-  // margin-left: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.banner-img {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-inner {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-inner h1 {
+  align-self: flex-start;
+}
+
+.banner-inner a {
+  align-self: flex-start;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-inner {
+    height: auto;
+  }
+
+  .banner-img {
+    height: auto;
+  }
+
+  .banner{
+    height: 120vh;
+  }
+
+  .banner-inner a {
+    align-self: center;
+    margin-bottom: 30px;
+  }
+
+  .banner-inner h1, .banner-inner .h1 {
+    align-self: center;
+  }
+
+  .banner-inner p{
+    text-align: center;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-inner {
+    height: auto;
+  }
+
+  .banner-img {
+    height: auto;
+  }
+
+  .banner{
+    height: 120vh;
+  }
+
+  .banner-inner a {
+    align-self: center;
+    margin-bottom: 30px;
+  }
+
+  .banner-inner h1, .banner-inner .h1 {
+    align-self: center;
+  }
+
+  .banner-inner p{
+    text-align: center;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-inner {
+    height: auto;
+  }
+
+  .banner-img {
+    height: auto;
+  }
+
+  .banner{
+    height: 120vh;
+  }
+
+  .banner-inner a {
+    align-self: center;
+    margin-bottom: 30px;
+  }
+
+  .banner-inner h1, .banner-inner .h1 {
+    align-self: center;
+  }
+
+  .banner-inner p{
+    text-align: center;
+  }
 }
