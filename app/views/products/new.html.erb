@@ -1,0 +1,37 @@
+<div class="container">
+
+  <section class="p-5 mb-5" style="background-color: #F4F4F4;">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-8">
+          <div class="card shadow-lg" style="border-radius: 0;">
+            <div class="card-body p-5 text-center">
+
+              <h2 class= "mb-4">Add a new Product </h2>
+
+                <%= simple_form_for @product do |p|%>
+
+                  <div class="form-outline mb-4">
+                    <%= p.input :name %>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <%= p.input :description , as: :text %>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <%= p.input :price %>
+                  </div>
+                  <div class="form-outline mb-5">
+                    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+                  </div>
+                  <div class="form-outline mt-4">
+                      <%= f.button :submit, class: "btn-update p-2" %>
+                  </div>
+                <% end %>
+                <%= link_to "Back", products_path %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
